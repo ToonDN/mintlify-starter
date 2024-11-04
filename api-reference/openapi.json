@@ -18910,25 +18910,25 @@
                                 "schema": {
                                     "properties": {
                                         "dim_employee": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         },
                                         "dim_skill": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         },
                                         "dim_vacancy": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         },
                                         "fact_employee_property": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         },
                                         "fact_match": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         },
                                         "fact_match_skill": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         },
                                         "fact_vacancy_property": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         }
                                     },
                                     "type": "object"
@@ -19029,16 +19029,16 @@
                                 "schema": {
                                     "properties": {
                                         "entity_details": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         },
                                         "entity_skill_cluster_links": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         },
                                         "skill_cluster_descriptions": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         },
                                         "skill_cluster_info": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         }
                                     },
                                     "type": "object"
@@ -19533,16 +19533,16 @@
                                 "schema": {
                                     "properties": {
                                         "entity_details": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         },
                                         "entity_skill_cluster_links": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         },
                                         "skill_cluster_descriptions": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         },
                                         "skill_cluster_info": {
-                                            "$ref": "../../components/schemas/reports/ReportProgress.yaml"
+                                            "$ref": "#/schemas/reports/ReportProgress.yaml"
                                         }
                                     },
                                     "type": "object"
