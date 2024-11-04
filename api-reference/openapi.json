@@ -6450,13 +6450,6 @@
                 "properties": {
                     "external_ids": {
                         "description": "List of `external_id`s of entities.",
-                        "items": [
-                            {
-                                "maxLength": 100,
-                                "minLength": 1,
-                                "type": "string"
-                            }
-                        ],
                         "maxLength": 100,
                         "type": "array"
                     },
@@ -16304,14 +16297,6 @@
         "/job_architecture/job_families/{job_family_external_id}": {
             "delete": {
                 "description": "Delete the Job Family information stored inside the system. By deleting the Job Family, all Job Family Profile Data is also deleted, together with every Job which is linked to this Job Family.",
-                "parameters": [
-                    {
-                        "description": "The unique Job Family ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "job_family_external_id",
-                        "required": true
-                    }
-                ],
                 "responses": {
                     "204": {
                         "description": "No Content"
@@ -16347,12 +16332,6 @@
             "get": {
                 "description": "Get the Job Family information stored inside the system.",
                 "parameters": [
-                    {
-                        "description": "The unique Job Family ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "job_family_external_id",
-                        "required": true
-                    },
                     {
                         "$ref": "#/components/parameters/AttributeInclude"
                     }
@@ -16391,14 +16370,7 @@
             },
             "patch": {
                 "description": "Submit the most up-to-date Job Family information. Any field that is present will overwrite existing values within the system, while absent fields will be left as-is.",
-                "parameters": [
-                    {
-                        "description": "The unique Job Family ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "job_family_external_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -17001,14 +16973,7 @@
         "/job_architecture/jobs/{job_external_id}": {
             "delete": {
                 "description": "Delete a Job by its external ID.\n      Delete the Job information stored inside the system. By deleting the Job, all Job Profile Data is also deleted.",
-                "parameters": [
-                    {
-                        "description": "The unique Job ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "job_external_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "responses": {
                     "204": {
                         "description": "No Content"
@@ -17045,12 +17010,6 @@
                 "description": "Get a Job by its external ID. This can for example be used to keep track of proper synchronisation between your system and the Skill Engine API.",
                 "parameters": [
                     {
-                        "description": "The unique Job ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "job_external_id",
-                        "required": true
-                    },
-                    {
                         "$ref": "#/components/parameters/AttributeInclude"
                     }
                 ],
@@ -17085,14 +17044,7 @@
             },
             "patch": {
                 "description": "Update a Job by its external ID. This can for example be used to keep track of proper synchronisation between your system and the Skill Engine API.",
-                "parameters": [
-                    {
-                        "description": "The unique Job ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "job_external_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -19023,11 +18975,6 @@
                                 "properties": {
                                     "job_columns": {
                                         "description": "The Custom Property columns that will be included in the `dim_job.csv` file.",
-                                        "items": [
-                                            {
-                                                "$ref": "#/components/schemas/DimColumn"
-                                            }
-                                        ],
                                         "type": "array"
                                     },
                                     "job_properties": {
@@ -20670,14 +20617,7 @@
         "/taxonomy/domains/{domain_external_id}": {
             "delete": {
                 "description": "Delete Domain information stored inside the system. By deleting a Domain, all Skill Clusters linked to this Domain are also deleted.",
-                "parameters": [
-                    {
-                        "description": "The unique Domain ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "domain_external_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "responses": {
                     "204": {
                         "description": "No Content"
@@ -20712,14 +20652,7 @@
             },
             "get": {
                 "description": "Get Domain information stored in the system.",
-                "parameters": [
-                    {
-                        "description": "The unique Domain ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "domain_external_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "responses": {
                     "200": {
                         "content": {
@@ -20761,14 +20694,7 @@
             },
             "patch": {
                 "description": "Submit the most up-to-date Domain information. Any field that is present will overwrite existing values within the system, while absent fields will be left as is.",
-                "parameters": [
-                    {
-                        "description": "The unique Domain ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "domain_external_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -20994,14 +20920,7 @@
         "/taxonomy/skill_clusters/{skill_cluster_external_id}": {
             "delete": {
                 "description": "Delete Skill Cluster information stored inside the system.",
-                "parameters": [
-                    {
-                        "description": "The unique Skill Cluster ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "skill_cluster_external_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "responses": {
                     "204": {
                         "description": "No Content"
@@ -21036,14 +20955,7 @@
             },
             "get": {
                 "description": "Get the Skill Cluster information stored in the system.",
-                "parameters": [
-                    {
-                        "description": "The unique Skill Cluster ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "skill_cluster_external_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "responses": {
                     "200": {
                         "content": {
@@ -21092,14 +21004,7 @@
             },
             "patch": {
                 "description": "Submit the most up-to-date Skill Cluster information. Any field that is present will overwrite existing values within the system, while absent fields will be left as is.",
-                "parameters": [
-                    {
-                        "description": "The unique Skill Cluster ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "skill_cluster_external_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -21158,12 +21063,6 @@
                 "description": "Get a list of all Skills linked to a Skill Cluster.",
                 "parameters": [
                     {
-                        "description": "The unique Skill Cluster ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "skill_cluster_external_id",
-                        "required": true
-                    },
-                    {
                         "$ref": "#/components/parameters/EntityLimitSkill"
                     },
                     {
@@ -21203,20 +21102,7 @@
         "/taxonomy/skill_clusters/{skill_cluster_external_id}/skills/{skill_id}": {
             "delete": {
                 "description": "Remove a Skill from a Skill Cluster.",
-                "parameters": [
-                    {
-                        "description": "The unique Skill Cluster ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "skill_cluster_external_id",
-                        "required": true
-                    },
-                    {
-                        "description": "The unique Skill ID in the vocabulary of the Skill Engine API, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "skill_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "responses": {
                     "204": {
                         "description": "No Content"
@@ -21251,20 +21137,7 @@
             },
             "put": {
                 "description": "Add a Skill to a Skill Cluster.",
-                "parameters": [
-                    {
-                        "description": "The unique Skill Cluster ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "skill_cluster_external_id",
-                        "required": true
-                    },
-                    {
-                        "description": "The unique Skill ID in the vocabulary of the Skill Engine API, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "skill_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "responses": {
                     "204": {
                         "description": "No Content"
@@ -21421,14 +21294,7 @@
         "/taxonomy/skills/{skill_id}": {
             "delete": {
                 "description": "Delete a Company-Specific Skill stored inside the system.",
-                "parameters": [
-                    {
-                        "description": "The unique Company-Specific Skill ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "skill_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "responses": {
                     "204": {
                         "description": "No Content"
@@ -21463,14 +21329,7 @@
             },
             "get": {
                 "description": "Get the Skill information stored inside the Vocabulary. This operation supports both TechWolf skills and Company-Specific skills.",
-                "parameters": [
-                    {
-                        "description": "The unique Skill ID in the vocabulary of the Skill Engine API, consisting of alphanumeric characters, hyphens and underscores. The ID can either be the external ID of a Company-Specific Skill, or the TechWolf Skill ID.",
-                        "in": "path",
-                        "name": "skill_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "responses": {
                     "200": {
                         "content": {
@@ -21519,14 +21378,7 @@
             },
             "patch": {
                 "description": "Submit the most up-to-date Company-Specific Skill information. Any field that is present will overwrite existing values within the system, while absent fields will be left as is.\u003cbr/\u003e **Please note**: You don't have to update TechWolf skills, the latest vocabulary is always present in your tenant.",
-                "parameters": [
-                    {
-                        "description": "The unique Company-Specific Skill ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "skill_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -21675,14 +21527,7 @@
         "/taxonomy/subdomains/{subdomain_external_id}": {
             "delete": {
                 "description": "Delete Subdomain information stored inside the system.",
-                "parameters": [
-                    {
-                        "description": "The unique Subdomain ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "subdomain_external_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "responses": {
                     "204": {
                         "description": "No Content"
@@ -21717,14 +21562,7 @@
             },
             "get": {
                 "description": "Get the Subdomain information stored in the system.",
-                "parameters": [
-                    {
-                        "description": "The unique Subdomain ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "subdomain_external_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "responses": {
                     "200": {
                         "content": {
@@ -21766,14 +21604,7 @@
             },
             "patch": {
                 "description": "Submit the most up-to-date Subdomain information. Any field that is present will overwrite existing values within the system, while absent fields will be left as is.",
-                "parameters": [
-                    {
-                        "description": "The unique Subdomain ID in your system, consisting of alphanumeric characters, hyphens and underscores.",
-                        "in": "path",
-                        "name": "subdomain_external_id",
-                        "required": true
-                    }
-                ],
+                "parameters": [],
                 "requestBody": {
                     "content": {
                         "application/json": {
