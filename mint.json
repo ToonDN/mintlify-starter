@@ -28,7 +28,8 @@
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference"
+      "url": "api-reference",
+      "openapi": "https://raw.githubusercontent.com/ToonDN/mintlify-starter/refs/heads/main/api-reference/openapi.json"
     }
   ],
   "anchors": [
