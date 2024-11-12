@@ -1,0 +1,11 @@
+---
+title: 'Partially update an Employee skill profile with feedback'
+openapi: 'PATCH /employees/{external_id}/skill_profile'
+---
+
+Provide feedback about an existing Employee skill profile to update it inside
+the system. When the `feedback_format` query parameter is `skills`,
+the body of the feedback message overwrites, adds or updates skills in the original profile.
+When the `feedback_format` query parameter is `skill_clusters`, this endpoint will change the Skill Cluster
+skills in the skill profile to fit the given Skill Cluster proficiency level.
+

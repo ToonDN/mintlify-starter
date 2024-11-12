@@ -1,0 +1,7 @@
+---
+title: 'Update Occupation'
+openapi: 'PATCH /occupations/{external_id}'
+---
+
+Submit the most up-to-date Occupation information to update their profile inside the system. Any field that is present will overwrite existing values within the system, while absent fields will be left as-is.
+Passing the `null` value removes non-required attributes. Object attributes will be removed when passing `null`, arrays with `[]` and strings with the empty string `''`.

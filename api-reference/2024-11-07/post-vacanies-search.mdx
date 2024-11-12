@@ -1,0 +1,6 @@
+---
+title: 'Search for Vacancies based on free text'
+openapi: 'POST /vacanies/search'
+---
+
+Search for Vacancies. Unlike other entities, searching happens based on the `job_title` text match by default, not based on skills match. </br> Literal string matching is fuzzy, meaning that typo's and misspellings should still turn up desired results. For example, searching for `deceptionist` could still show `receptionist` Vacancy results. </br> Literal search will always result in a score of `1.0`. A combination of both types is possible.

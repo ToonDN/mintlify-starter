@@ -1,0 +1,17 @@
+---
+title: 'Get the internal talent mobility report.'
+openapi: 'POST /reports/internal_talent_mobility'
+---
+
+![Beta](https://img.shields.io/badge/-Experimental-orange)
+
+This report generates a zip file containing the following files:
+- `dim_employee.csv` : A list of all Employees in the system, containing their external IDs and Custom Properties provided in `employee_columns`.
+- `fact_employee_property.csv` : A list of Custom Property mappings containing external IDs of the Employee, Custom Property name and Custom Property value for all the Custom Properties provided in `employee_properties`.
+- `dim_vacancy.csv` : A list of all vacancies in the system, containing external IDs and Custom Properties provided in `vacancy_columns`.
+- `fact_vacancy_property.csv` : A list of Custom Property mappings containing external IDs of the Vacancy, Custom Property name and Custom Property value for all Custom Properties provided in `vacancy_properties`.
+- `fact_vacancy_skill.csv` : Contains a list of all Vacancy external ID-skill pairs.
+- `fact_match_skill.csv` : Contains the match score for every Skill for all Employee-Vacancy pairs.
+- `dim_skill.csv` : A list of all Skills referred to in the files above containing the external IDs, the name and the description.
+- `fact_match.csv` : Contains the match score of all Employee-Vacancy pairs.
+

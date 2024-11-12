@@ -1,0 +1,6 @@
+---
+title: 'Update a Vacancy skill profile with feedback'
+openapi: 'PATCH /vacancies/{external_id}/skill_profile'
+---
+
+Provide feedback about an existing Vacancy skill profile to update it inside the system. When the `feedback_format` query parameter is `skills`, the body of the feedback message updates the existing skill profile, so if a skill is not present in the body, it will not be affected. The feedback can contain updates that either validate or remove the skill. When the `feedback_format` query parameter is `skill_clusters`, this  endpoint will change the Skill Cluster skills in the skill profile to fit the given Skill Cluster proficiency level.

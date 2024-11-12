@@ -1,0 +1,15 @@
+---
+title: 'Get the replacement risk report'
+openapi: 'POST /reports/replacement_risk'
+---
+
+![Beta](https://img.shields.io/badge/-Experimental-orange)
+
+Retrieve the replacement risk report for all Employees with respect to the value of a custom property and one or more filters. The replacement risk report shows which Employees pose a risk in terms of finding a proper replacement, as well as the skills that would be in danger should this Employee leave.
+
+The report consists of three smaller reports. An aggregated replacement risk report, an aggregated skills at risk report and an Employee replacement risk report.
+
+- The aggregated replacement risk report returns the replacement risk distribution for every group. The distribution shows how high the risk is when replacing Employees with other Employees from the same group. A high replacement risk means that there is no other Employee within the same group that can replace a particular Employee.
+- The aggregated skills at risk report lists every endangered skill for every group and how many times the skill is present within the group. A skill is only shows if fewer than six Employees within the same group have this skill.
+- The Employee risk report shows in detail for every Employee how high the replacement risk is and the skills at risk for this Employee.
+

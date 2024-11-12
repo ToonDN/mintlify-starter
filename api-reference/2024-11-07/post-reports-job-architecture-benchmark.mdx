@@ -1,0 +1,17 @@
+---
+title: 'Get the job architecture benchmark report'
+openapi: 'POST /reports/job_architecture_benchmark'
+---
+
+![Beta](https://img.shields.io/badge/-Experimental-orange)
+
+Get your Job Architecture Benchmark containing the Jobs and how they compare to the ones in their peer groups.
+This report generates a zip file containing the following files:
+- `dim_peer_group.csv`: A list of all jobs in the system, containing external IDs and the ID of the peer group.
+- `fact_peer_group_property.csv`: Currently unused.
+- `dim_job.csv`: A list of all Jobs present in the system, containing their external IDs, job titles and Custom Properties provided in `job_columns`.
+- `fact_job_property.csv`: A list of Custom Property mappings containing external IDs of the Job, Custom Property name and Custom Property value for all Custom Properties provided in `job_properties`.
+- `dim_skill.csv`: A list of all Skills referred to in the files above containing the external IDs, the name and the description.
+- `fact_match_skill.csv`: Contains the match score for every Skill for all peer group - Job pairs.
+- `fact_match.csv`: Contains the match score of all peer group - Job pairs.
+

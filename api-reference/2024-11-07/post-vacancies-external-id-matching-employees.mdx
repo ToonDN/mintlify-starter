@@ -1,0 +1,6 @@
+---
+title: 'Get the top matching Employees for a Vacancy.'
+openapi: 'POST /vacancies/{external_id}/matching_employees'
+---
+
+You can use filters in the request body to restrict the match results based on distance, language & Custom Properties. If the `max_geo_distance` filter is not provided, a default value of 50km is used.

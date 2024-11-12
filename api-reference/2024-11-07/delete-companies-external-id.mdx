@@ -1,0 +1,10 @@
+---
+title: 'Delete External Company'
+openapi: 'DELETE /companies/{external_id}'
+---
+
+Remove an External Company from the system. The External Company's linked Vacancies will be processed in cascade based on:
+  * linked __active__ Vacancy: the reference to the External Company is
+removed, but the Vacancy itself is not removed from the system.
+  * linked __inactive__ Vacancy: the reference to the External Company as
+well as the Vacancy itself is removed from the system.

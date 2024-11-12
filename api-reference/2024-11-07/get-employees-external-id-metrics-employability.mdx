@@ -1,0 +1,6 @@
+---
+title: 'Get the employability metric'
+openapi: 'GET /employees/{external_id}/metrics/employability'
+---
+
+Retrieve the employability for this Employee. Employability is influenced by two factors: the number of matching Vacancies (demand) & the number of Employees that could fill those Vacancies (supply). It is reported as a number between 0 and 1, with the upper end indicating that an Employee has many matching opportunities (= high demand) for which there are not many matching Employees (= low supply). A lower score indicates fewer opportunities (= low demand), or that there is already a high supply of those profiles.

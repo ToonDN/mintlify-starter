@@ -1,0 +1,6 @@
+---
+title: 'Get the fillability metric'
+openapi: 'GET /vacancies/{external_id}/metrics/fillability'
+---
+
+Retrieve the fillability for this Vacancy. Fillability is influenced by two factors: the number of matching Employees (supply) and the number of Vacancies that could be filled by those Employees (demand). It is reported as a number between 0 and 1, with the upper end indicating that a Vacancy has many matching opportunities (= high supply of employees) for which there are not many matching Vacancies (= low demand). A lower score indicates fewer opportunities (= low supply), or that there is already a high demand for those profiles.

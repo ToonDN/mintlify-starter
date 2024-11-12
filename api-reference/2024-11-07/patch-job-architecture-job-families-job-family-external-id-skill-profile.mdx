@@ -1,0 +1,9 @@
+---
+title: 'Partially update a Job Family skill profile with feedback'
+openapi: 'PATCH /job_architecture/job_families/{job_family_external_id}/skill_profile'
+---
+
+Provide feedback about an existing Job Family skill profile to update it inside
+the system. When the `feedback_format` query parameter is `skills`,
+the body of the feedback message overwrites, adds or updates skills in the original profile.
+

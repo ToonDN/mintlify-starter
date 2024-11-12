@@ -1,0 +1,17 @@
+---
+title: 'Get the skill inventory report'
+openapi: 'POST /reports/skill_inventory'
+---
+
+![Beta](https://img.shields.io/badge/-Experimental-orange)
+
+Get your Skill inventory, the Skill Clusters of your entities, and where these originate from.
+This report generates a zip file containing the following files:
+- `dim_{entity_type}.csv` : A list of all entities in the system, containing external IDs and Custom Properties provided in `entity_columns`.
+- `fact_{entity_type}_property.csv` : A list of Custom Property mappings containing external IDs of the entity, Custom Property name and Custom Property value for all the Custom Properties provided in `entity_properties`.
+- `dim_skill.csv` : A list of all Skills referred to in the files above containing the external IDs, the name and the description.
+- `dim_skill_cluster.csv` : A list of all Skill Clusters in the system, containing the name, the domain name and their Skills.
+- `fact_{entity_type}_skill_cluster.csv` : A list of the validation state and proficiency level for each combination of Employee and Skill Cluster.
+- `fact_skill_cluster.csv` : A list of all Skills in each Skill Cluster, containing the Skill Cluster external IDs and Skill external IDs.
+- `fact_skill_source.csv` : A list containing the source of each Skill of an Employee.
+

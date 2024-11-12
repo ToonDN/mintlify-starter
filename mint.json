@@ -7,14 +7,22 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
+    "primary": "#000000",
+    "light": "#F5F5F5",
     "dark": "#0D9373",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#8997F9",
+      "to": "#8997F9"
     }
   },
+  "versions": [
+    {
+      "name": "2024-10-01"
+    },
+    {
+      "name": "2024-10-10"
+    }
+  ],
   "topbarLinks": [
     {
       "name": "Support",
@@ -28,8 +36,7 @@
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference",
-      "openapi": "https://raw.githubusercontent.com/ToonDN/mintlify-starter/refs/heads/main/api-reference/openapi.json"
+      "url": "api-reference"
     }
   ],
   "anchors": [
@@ -76,14 +83,529 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Taxonomy",
+      "version": "2024-10-01",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        {
+          "group": "TaxonomyDomains",
+          "pages": [
+            "api-reference/2024-11-07/delete-taxonomy-domains-domain-external-id",
+            "api-reference/2024-11-07/get-taxonomy-domains",
+            "api-reference/2024-11-07/get-taxonomy-domains-domain-external-id",
+            "api-reference/2024-11-07/patch-taxonomy-domains-domain-external-id",
+            "api-reference/2024-11-07/post-taxonomy-domains"
+          ]
+        },
+        {
+          "group": "TaxonomySubdomains",
+          "pages": [
+            "api-reference/2024-11-07/delete-taxonomy-subdomains-subdomain-external-id",
+            "api-reference/2024-11-07/get-taxonomy-subdomains",
+            "api-reference/2024-11-07/get-taxonomy-subdomains-subdomain-external-id",
+            "api-reference/2024-11-07/patch-taxonomy-subdomains-subdomain-external-id",
+            "api-reference/2024-11-07/post-taxonomy-subdomains"
+          ]
+        },
+        {
+          "group": "TaxonomySkillClusters",
+          "pages": [
+            "api-reference/2024-11-07/delete-taxonomy-skill-clusters-skill-cluster-external-id",
+            "api-reference/2024-11-07/delete-taxonomy-skill-clusters-skill-cluster-external-id-skills-skill-id",
+            "api-reference/2024-11-07/get-taxonomy-skill-clusters",
+            "api-reference/2024-11-07/get-taxonomy-skill-clusters-skill-cluster-external-id",
+            "api-reference/2024-11-07/get-taxonomy-skill-clusters-skill-cluster-external-id-skills",
+            "api-reference/2024-11-07/patch-taxonomy-skill-clusters-skill-cluster-external-id",
+            "api-reference/2024-11-07/post-taxonomy-skill-clusters",
+            "api-reference/2024-11-07/put-taxonomy-skill-clusters-skill-cluster-external-id-skills-skill-id"
+          ]
+        },
+        {
+          "group": "TaxonomySkills",
+          "pages": [
+            "api-reference/2024-11-07/get-taxonomy-skills",
+            "api-reference/2024-11-07/get-taxonomy-skills-skill-id"
+          ]
+        },
+        {
+          "group": "TaxonomySkillsCompanySpecific",
+          "pages": [
+            "api-reference/2024-11-07/delete-taxonomy-skills-skill-id",
+            "api-reference/2024-11-07/patch-taxonomy-skills-skill-id",
+            "api-reference/2024-11-07/post-taxonomy-skills"
+          ]
+        },
+        {
+          "group": "Taxonomy",
+          "pages": [
+            "api-reference/2024-11-07/get-taxonomy-changes",
+            "api-reference/2024-11-07/get-taxonomy-export",
+            "api-reference/2024-11-07/post-taxonomy-apply"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Employees",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "EmployeeCRUD",
+          "pages": [
+            "api-reference/2024-11-07/delete-employees-external-id",
+            "api-reference/2024-11-07/get-employees",
+            "api-reference/2024-11-07/get-employees-external-id",
+            "api-reference/2024-11-07/patch-employees-external-id",
+            "api-reference/2024-11-07/post-employees"
+          ]
+        },
+        {
+          "group": "EmployeeProfile",
+          "pages": [
+            "api-reference/2024-11-07/get-employees-external-id-skill-profile",
+            "api-reference/2024-11-07/patch-employees-external-id-skill-profile"
+          ]
+        },
+        {
+          "group": "EmployeeMetrics",
+          "pages": [
+            "api-reference/2024-11-07/get-employees-external-id-metrics-employability",
+            "api-reference/2024-11-07/get-employees-external-id-metrics-position-alignment",
+            "api-reference/2024-11-07/get-employees-metrics-count",
+            "api-reference/2024-11-07/post-employees-external-id-metrics-employability"
+          ]
+        },
+        {
+          "group": "EmployeeSearch",
+          "pages": [
+            "api-reference/2024-11-07/post-employees-search"
+          ]
+        },
+        {
+          "group": "SkillEvents",
+          "pages": [
+            "api-reference/2024-11-07/delete-employees-employee-external-id-skill-events-skill-event-external-id",
+            "api-reference/2024-11-07/get-employees-employee-external-id-skill-events",
+            "api-reference/2024-11-07/patch-employees-employee-external-id-skill-events-skill-event-external-id",
+            "api-reference/2024-11-07/post-employees-employee-external-id-skill-events"
+          ]
+        },
+        {
+          "group": "EmployeeInteractions",
+          "pages": [
+            "api-reference/2024-11-07/delete-employees-employee-external-id-interactions-interaction-external-id",
+            "api-reference/2024-11-07/get-employees-employee-external-id-interactions",
+            "api-reference/2024-11-07/get-employees-employee-external-id-interactions-interaction-external-id",
+            "api-reference/2024-11-07/post-employees-employee-external-id-interactions"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Job Families",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "JobFamilyCRUD",
+          "pages": [
+            "api-reference/2024-11-07/delete-job-architecture-job-families-job-family-external-id",
+            "api-reference/2024-11-07/get-job-architecture-job-families",
+            "api-reference/2024-11-07/get-job-architecture-job-families-job-family-external-id",
+            "api-reference/2024-11-07/patch-job-architecture-job-families-job-family-external-id",
+            "api-reference/2024-11-07/post-job-architecture-job-families"
+          ]
+        },
+        {
+          "group": "JobFamilyProfile",
+          "pages": [
+            "api-reference/2024-11-07/get-job-architecture-job-families-job-family-external-id-skill-profile",
+            "api-reference/2024-11-07/patch-job-architecture-job-families-job-family-external-id-skill-profile"
+          ]
+        },
+        {
+          "group": "Job Family Profile Data",
+          "pages": [
+            "api-reference/2024-11-07/delete-job-architecture-job-families-job-family-external-id-profile-data-job-family-profile-data-external-id",
+            "api-reference/2024-11-07/get-job-architecture-job-families-job-family-external-id-profile-data",
+            "api-reference/2024-11-07/patch-job-architecture-job-families-job-family-external-id-profile-data-job-family-profile-data-external-id",
+            "api-reference/2024-11-07/post-job-architecture-job-families-job-family-external-id-profile-data"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Jobs",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "JobCRUD",
+          "pages": [
+            "api-reference/2024-11-07/delete-job-architecture-jobs-job-external-id",
+            "api-reference/2024-11-07/get-job-architecture-jobs",
+            "api-reference/2024-11-07/get-job-architecture-jobs-job-external-id",
+            "api-reference/2024-11-07/patch-job-architecture-jobs-job-external-id",
+            "api-reference/2024-11-07/post-job-architecture-jobs"
+          ]
+        },
+        {
+          "group": "JobProfile",
+          "pages": [
+            "api-reference/2024-11-07/get-job-architecture-jobs-job-external-id-market-skill-profile",
+            "api-reference/2024-11-07/get-job-architecture-jobs-job-external-id-skill-profile",
+            "api-reference/2024-11-07/patch-job-architecture-jobs-job-external-id-skill-profile"
+          ]
+        },
+        {
+          "group": "Job Profile Data",
+          "pages": [
+            "api-reference/2024-11-07/delete-job-architecture-jobs-job-external-id-profile-data-job-profile-data-external-id",
+            "api-reference/2024-11-07/get-job-architecture-jobs-job-external-id-profile-data",
+            "api-reference/2024-11-07/patch-job-architecture-jobs-job-external-id-profile-data-job-profile-data-external-id",
+            "api-reference/2024-11-07/post-job-architecture-jobs-job-external-id-profile-data"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Vacancies",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "VacancyCRUD",
+          "pages": [
+            "api-reference/2024-11-07/delete-vacancies-external-id",
+            "api-reference/2024-11-07/get-vacancies",
+            "api-reference/2024-11-07/get-vacancies-external-id",
+            "api-reference/2024-11-07/patch-vacancies-external-id",
+            "api-reference/2024-11-07/post-vacancies"
+          ]
+        },
+        {
+          "group": "VacancyProfile",
+          "pages": [
+            "api-reference/2024-11-07/get-vacancies-external-id-skill-profile",
+            "api-reference/2024-11-07/patch-vacancies-external-id-skill-profile"
+          ]
+        },
+        {
+          "group": "VacancyMetrics",
+          "pages": [
+            "api-reference/2024-11-07/get-vacancies-external-id-metrics-fillability",
+            "api-reference/2024-11-07/get-vacancies-metrics-count",
+            "api-reference/2024-11-07/post-vacancies-external-id-metrics-fillability"
+          ]
+        },
+        {
+          "group": "VacancySearch",
+          "pages": [
+            "api-reference/2024-11-07/post-vacanies-search"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Courses",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "CourseCRUD",
+          "pages": [
+            "api-reference/2024-11-07/delete-courses-external-id",
+            "api-reference/2024-11-07/get-courses",
+            "api-reference/2024-11-07/get-courses-external-id",
+            "api-reference/2024-11-07/patch-courses-external-id",
+            "api-reference/2024-11-07/post-courses"
+          ]
+        },
+        {
+          "group": "CourseProfile",
+          "pages": [
+            "api-reference/2024-11-07/get-courses-external-id-skill-profile",
+            "api-reference/2024-11-07/patch-courses-external-id-skill-profile"
+          ]
+        },
+        {
+          "group": "CourseMetrics",
+          "pages": [
+            "api-reference/2024-11-07/get-courses-metrics-count"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Occupations",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "OccupationCRUD",
+          "pages": [
+            "api-reference/2024-11-07/delete-occupations-external-id",
+            "api-reference/2024-11-07/get-occupations",
+            "api-reference/2024-11-07/get-occupations-external-id",
+            "api-reference/2024-11-07/patch-occupations-external-id",
+            "api-reference/2024-11-07/post-occupations"
+          ]
+        },
+        {
+          "group": "OccupationProfile",
+          "pages": [
+            "api-reference/2024-11-07/get-occupations-external-id-skill-profile",
+            "api-reference/2024-11-07/patch-occupations-external-id-skill-profile"
+          ]
+        },
+        {
+          "group": "OccupationMetrics",
+          "pages": [
+            "api-reference/2024-11-07/get-occupations-metrics-count"
+          ]
+        },
+        {
+          "group": "OccupationSearch",
+          "pages": [
+            "api-reference/2024-11-07/post-occupations-search"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Skill Clusters",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "SkillClusterCRUD",
+          "pages": [
+            "api-reference/2024-11-07/get-skill-clusters",
+            "api-reference/2024-11-07/get-skill-clusters-external-id"
+          ]
+        },
+        {
+          "group": "SkillClusterProfile",
+          "pages": [
+            "api-reference/2024-11-07/get-skill-clusters-external-id-skill-profile"
+          ]
+        },
+        {
+          "group": "SkillClusterMetrics",
+          "pages": [
+            "api-reference/2024-11-07/get-skill-clusters-metrics-count"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "External Companies",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "CompanyCRUD",
+          "pages": [
+            "api-reference/2024-11-07/delete-companies-external-id",
+            "api-reference/2024-11-07/get-companies",
+            "api-reference/2024-11-07/get-companies-external-id",
+            "api-reference/2024-11-07/get-companies-external-id-vacancies",
+            "api-reference/2024-11-07/patch-companies-external-id",
+            "api-reference/2024-11-07/post-companies",
+            "api-reference/2024-11-07/post-companies-external-id-desired-functions",
+            "api-reference/2024-11-07/post-companies-external-id-nace",
+            "api-reference/2024-11-07/put-companies-external-id-desired-functions",
+            "api-reference/2024-11-07/put-companies-external-id-nace"
+          ]
+        },
+        {
+          "group": "CompanySearch",
+          "pages": [
+            "api-reference/2024-11-07/post-companies-search"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Skills",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "Skill Search",
+          "pages": [
+            "api-reference/2024-11-07/get-skills-search"
+          ]
+        },
+        {
+          "group": "Skill Gaps",
+          "pages": [
+            "api-reference/2024-11-07/get-employees-employee-external-id-vacancies-vacancy-external-id-gap"
+          ]
+        },
+        {
+          "group": "Related Skills",
+          "pages": [
+            "api-reference/2024-11-07/get-courses-external-id-profile-related",
+            "api-reference/2024-11-07/get-employees-external-id-profile-related",
+            "api-reference/2024-11-07/get-occupations-external-id-profile-related",
+            "api-reference/2024-11-07/get-skills-skill-name-related",
+            "api-reference/2024-11-07/get-vacancies-external-id-profile-related",
+            "api-reference/2024-11-07/post-courses-external-id-profile-related",
+            "api-reference/2024-11-07/post-employees-external-id-profile-related",
+            "api-reference/2024-11-07/post-occupations-external-id-profile-related",
+            "api-reference/2024-11-07/post-vacancies-external-id-profile-related"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Custom Properties",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "CustomPropertiesDefinitions",
+          "pages": [
+            "api-reference/2024-11-07/delete-entity-type-custom-properties-property-name",
+            "api-reference/2024-11-07/get-entity-type-custom-properties",
+            "api-reference/2024-11-07/get-entity-type-custom-properties-property-name",
+            "api-reference/2024-11-07/patch-entity-type-custom-properties-property-name",
+            "api-reference/2024-11-07/post-entity-type-custom-properties"
+          ]
+        },
+        {
+          "group": "CustomPropertiesProperties",
+          "pages": [
+            "api-reference/2024-11-07/delete-entity-type-entity-type-external-id-custom-properties",
+            "api-reference/2024-11-07/get-entity-type-entity-type-external-id-custom-properties",
+            "api-reference/2024-11-07/patch-entity-type-entity-type-external-id-custom-properties",
+            "api-reference/2024-11-07/put-entity-type-entity-type-external-id-custom-properties"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Matchmaking",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "Vacancy Matching",
+          "pages": [
+            "api-reference/2024-11-07/get-employees-employee-external-id-vacancies-vacancy-external-id-match",
+            "api-reference/2024-11-07/post-employees-external-id-matching-vacancies",
+            "api-reference/2024-11-07/post-vacancies-external-id-matching-employees"
+          ]
+        },
+        {
+          "group": "Course Recommendations",
+          "pages": [
+            "api-reference/2024-11-07/get-employees-employee-external-id-recommended-courses",
+            "api-reference/2024-11-07/get-employees-employee-external-id-vacancies-vacancy-external-id-recommended-courses",
+            "api-reference/2024-11-07/post-employees-employee-external-id-recommended-courses"
+          ]
+        },
+        {
+          "group": "External Company Matching",
+          "pages": [
+            "api-reference/2024-11-07/post-companies-external-id-matching-employees",
+            "api-reference/2024-11-07/post-employees-external-id-matching-companies"
+          ]
+        },
+        {
+          "group": "Job Architecture Matching",
+          "pages": [
+            "api-reference/2024-11-07/post-employees-external-id-matching-job-families"
+          ]
+        },
+        {
+          "group": "Similar Entities",
+          "pages": [
+            "api-reference/2024-11-07/post-courses-external-id-similar",
+            "api-reference/2024-11-07/post-employees-external-id-similar",
+            "api-reference/2024-11-07/post-occupations-external-id-similar",
+            "api-reference/2024-11-07/post-vacancies-external-id-similar"
+          ]
+        },
+        {
+          "group": "Match Feedback",
+          "pages": [
+            "api-reference/2024-11-07/delete-employees-employee-external-id-courses-course-external-id-match-feedback",
+            "api-reference/2024-11-07/delete-employees-employee-external-id-vacancies-vacancy-external-id-match-feedback",
+            "api-reference/2024-11-07/post-employees-employee-external-id-courses-course-external-id-match-feedback",
+            "api-reference/2024-11-07/post-employees-employee-external-id-vacancies-vacancy-external-id-match-feedback"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Export",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "ExportEmployeesSkillClusters",
+          "pages": [
+            "api-reference/2024-11-07/post-export-employees-skill-clusters"
+          ]
+        },
+        {
+          "group": "JobArchitectureExport",
+          "pages": [
+            "api-reference/2024-11-07/get-job-architecture-export",
+            "api-reference/2024-11-07/post-job-architecture-export-job-skill-clusters"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Reports",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "General Reports",
+          "pages": [
+            "api-reference/2024-11-07/get-reports-counts",
+            "api-reference/2024-11-07/post-reports-clustered-trending-skills",
+            "api-reference/2024-11-07/post-reports-emerging-skills",
+            "api-reference/2024-11-07/post-reports-internal-talent-mobility",
+            "api-reference/2024-11-07/post-reports-job-architecture-benchmark",
+            "api-reference/2024-11-07/post-reports-organization-names",
+            "api-reference/2024-11-07/post-reports-reskilling-and-deployment",
+            "api-reference/2024-11-07/post-reports-skill-frequencies",
+            "api-reference/2024-11-07/post-reports-skill-inventory",
+            "api-reference/2024-11-07/post-reports-skills-alignment",
+            "api-reference/2024-11-07/post-reports-strategy-map",
+            "api-reference/2024-11-07/post-reports-workforce-alignment"
+          ]
+        },
+        {
+          "group": "Employee Reports",
+          "pages": [
+            "api-reference/2024-11-07/get-reports-employees-employability",
+            "api-reference/2024-11-07/get-reports-employees-position-alignment",
+            "api-reference/2024-11-07/get-reports-employees-skills",
+            "api-reference/2024-11-07/post-reports-employee-skill-distribution",
+            "api-reference/2024-11-07/post-reports-employees-skill-cluster-adoption",
+            "api-reference/2024-11-07/post-reports-replacement-risk",
+            "api-reference/2024-11-07/post-reports-succession-risk"
+          ]
+        },
+        {
+          "group": "Vacancy Reports",
+          "pages": [
+            "api-reference/2024-11-07/post-reports-vacancy-skill-distribution"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Version",
+      "version": "2024-10-01",
+      "pages": [
+        {
+          "group": "Version",
+          "pages": [
+            "api-reference/2024-11-07/get-version"
+          ]
+        }
       ]
     }
   ],
+  "api": {
+    "playground": {
+      "mode": "hide"
+    }
+  },
   "footerSocials": {
     "x": "https://x.com/mintlify",
     "github": "https://github.com/mintlify",

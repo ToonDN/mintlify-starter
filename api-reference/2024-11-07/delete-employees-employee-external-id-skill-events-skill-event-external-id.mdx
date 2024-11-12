@@ -1,0 +1,6 @@
+---
+title: 'Delete Skill Event'
+openapi: 'DELETE /employees/{employee_external_id}/skill_events/{skill_event_external_id}'
+---
+
+Remove a Skill Event from an Employee. This step deletes all information linked exclusively to this Skill Event. If a Skill Event contained a non-empty skill profile, the employee's skill profile is recalculated with the remaining Skill Events.

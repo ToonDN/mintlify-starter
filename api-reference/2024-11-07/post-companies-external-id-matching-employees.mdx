@@ -1,0 +1,6 @@
+---
+title: 'Find the best Employees for a given External Company'
+openapi: 'POST /companies/{external_id}/matching_employees'
+---
+
+You can use filters in the request body to restrict the match results based on distance, language & Custom Properties. If the `max_geo_distance` filter is not provided, a default value of 50km is used.
